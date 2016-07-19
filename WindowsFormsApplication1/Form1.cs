@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Delta.Data;
+
 
 namespace WindowsFormsApplication1
 {
@@ -16,5 +18,12 @@ namespace WindowsFormsApplication1
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            DeltaCalculator calc = new DeltaCalculator();
+            calc.AddValues();
+        }
+        
     }
 }
